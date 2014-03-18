@@ -8,10 +8,10 @@ sudo easy_install pip
 sudo pip install tweepy
 
 Get a consumer_key and consumer_secrect from Twitter
-Go to https://dev.twitter.com/apps/new and log in, if necessary
-Supply the necessary required fields, accept the TOS, and solve the CAPTCHA.
-Submit the form
-Copy the consumer key (API key) and consumer secret from the screen into the twitterer.py 
+* Go to https://dev.twitter.com/apps/new and log in, if necessary
+* Supply the necessary required fields, accept the TOS, and solve the CAPTCHA.
+* Submit the form
+* Copy the consumer key (API key) and consumer secret from the screen into the twitterer.py 
 consumer_key = 'YOUR_CONSUMER_KEY'
 consumer_secret = 'YOUR_CONSUMER_SECRET'
 

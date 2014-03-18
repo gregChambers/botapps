@@ -8,12 +8,12 @@ sudo easy_install pip
 sudo pip install tweepy
 
 Get a consumer_key and consumer_secrect from Twitter:
-1- Go to https://dev.twitter.com/apps/new and log in, if necessary
-2- Supply the necessary required fields, accept the TOS, and solve the CAPTCHA.
-3- Submit the form
-4- Copy the consumer key (API key) and consumer secret from the screen into the twitterer.py 
-	4.1- consumer_key = 'YOUR_CONSUMER_KEY'
-			 consumer_secret = 'YOUR_CONSUMER_SECRET'
+-Go to https://dev.twitter.com/apps/new and log in, if necessary
+-Supply the necessary required fields, accept the TOS, and solve the CAPTCHA.
+-Submit the form
+-Copy the consumer key (API key) and consumer secret from the screen into the twitterer.py 
+consumer_key = 'YOUR_CONSUMER_KEY'
+consumer_secret = 'YOUR_CONSUMER_SECRET'
 
 Copy twitterer.py script into your raspberrPi, e.g. in /home/pi
 

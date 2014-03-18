@@ -1,11 +1,11 @@
 INSTRUCTIONS
 ============
 
-Install the following libraries:
-sudo apt-get install python-oauth2
-sudo apt-get install python-setuptools
-sudo easy_install pip
-sudo pip install tweepy
+Install the following libraries
+* sudo apt-get install python-oauth2
+* sudo apt-get install python-setuptools
+* sudo easy_install pip
+* sudo pip install tweepy
 
 Get a consumer_key and consumer_secrect from Twitter
 * Go to https://dev.twitter.com/apps/new and log in, if necessary

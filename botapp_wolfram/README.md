@@ -2,9 +2,6 @@ INSTRUCTIONS
 ============
 
 Install the following libraries
-* sudo apt-get update
-* sudo apt-get install wolfram-engine (not sure inf neccesary)
-* sudo apt-get install python-setuptools
 * sudo easy_install pip
 * sudo pip install wolframalpha
 

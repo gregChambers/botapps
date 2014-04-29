@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+
+# Name: botapp_multilingual
+# Author: Pablo Garcia, pgarcia@aisoy.com
+# License: BSD
+
+import rospy
+import roslib; 
+roslib.load_manifest('aisoy_sdk_translate')
+roslib.load_manifest('aisoy_sdk_tts')
+roslib.load_manifest('aisoy_common')
+from libaisoy_sdk_translate import *;
+from libaisoy_sdk_tts import *;
+from libaisoy_common import *
+
+if __name__ == '__main__':
+	rospy.init_node('botapp_multilingual')
+
+	tts = Tts(TtsName.Espeak)
+	translate = Translate()
+
+	languages = [Language.English, Language.Spanish, Language.French, Language.Portuguese, Language.Italian, Language.Deutsch, Language.Catalan]
+	sentence = "Hello, my name is AISoy. I am a social robot and as you can see, I am able to speak many languages."
+
+	for lang in languages: 
+		tts.setTtsLanguage(lang)
+		if lang != Language.English:
+			to_say = translate.translate(sentence, Language.English, lang)
+		else:
+			to_say = sentence
+		rospy.loginfo("sentence: %s", to_say)
+		tts.say(to_say)

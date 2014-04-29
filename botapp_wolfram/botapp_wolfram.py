@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+# Name: botapp_wolfram
+# Author: Pablo Garcia, pgarcia@aisoy.com
+# License: BSD
+
 import wolframalpha
 import sys
 import unicodedata 
